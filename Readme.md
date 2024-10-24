@@ -19,8 +19,8 @@
 
 
 #### requirements
- * Docker
- * Docker compose
+ * Docker v20.10
+ * Docker compose v1.25
 
 ### How to run
 
