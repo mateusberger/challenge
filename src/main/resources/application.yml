@@ -1,0 +1,25 @@
+challenge:
+  config:
+
+    jwt:
+      secret: '614E645267556B58703273357638782F413F4428472B4B6250655368566D5971'
+      expirationTimeInMinutes: 24
+
+    admin-user:
+      create: true
+      username: 'townsq_super'
+      password: 'verySecurePassword'
+
+spring:
+
+  datasource:
+    url: jdbc:postgresql://db:5432/challenge
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
