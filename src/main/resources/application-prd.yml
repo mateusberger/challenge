@@ -1,0 +1,25 @@
+challenge:
+  config:
+
+    jwt:
+      secret: ${JWT_SECRET}
+      expirationTimeInMinutes: ${JWT_EXPIRATION}
+
+    admin-user:
+      create: ${CREATE_ADMIN_USER}
+      username: ${ADMIN_USERNAME}
+      password: ${ADMIN_PASSWORD}
+
+spring:S
+
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
