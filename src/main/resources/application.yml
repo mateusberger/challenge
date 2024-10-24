@@ -2,7 +2,7 @@ challenge:
   config:
 
     jwt:
-      secret: '614E645267556B58703273357638782F413F4428472B4B6250655368566D5971'
+      secret: '957386928648455625d236456sdf66645566466236d4fsg6984566354456546f'
       expirationTimeInMinutes: 24
 
     admin-user:
