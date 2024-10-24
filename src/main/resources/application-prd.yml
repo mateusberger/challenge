@@ -10,7 +10,7 @@ challenge:
       username: ${ADMIN_USERNAME}
       password: ${ADMIN_PASSWORD}
 
-spring:S
+spring:
 
   datasource:
     url: ${DB_URL}
