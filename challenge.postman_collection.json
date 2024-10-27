@@ -40,7 +40,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0b3duc3Ffc3VwZXIiLCJpYXQiOjE3Mjk3MTgxOTUsImV4cCI6MTcyOTcxOTYzNX0.Vzm-ufF70CGJSfC1zRARMwcnZJmSVvz9ZQ7T5G3H0kc",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0b3duc3Ffc3VwZXIiLCJpYXQiOjE3Mjk3NzA0OTAsImV4cCI6MTcyOTc3MTkzMH0.N5CeT5Z3hUED5E5qckGTi6RAy57ziaw3gFVoPj5HMhE",
 						"type": "text"
 					}
 				],
@@ -73,7 +73,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0b3duc3Ffc3VwZXIiLCJpYXQiOjE3Mjk3MDg0MTUsImV4cCI6MTcyOTcwOTg1NX0.4CDhIuNZE12x2axL7YvJAzS6zMSLDt7tJ4kxniCFfAI",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0b3duc3Ffc3VwZXIiLCJpYXQiOjE3Mjk3NzA0OTAsImV4cCI6MTcyOTc3MTkzMH0.N5CeT5Z3hUED5E5qckGTi6RAy57ziaw3gFVoPj5HMhE",
 						"type": "text"
 					}
 				],
@@ -104,7 +104,23 @@
 			"name": "get authenticated user",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0b3duc3Ffc3VwZXIiLCJpYXQiOjE3Mjk3MDg0MTUsImV4cCI6MTcyOTcwOTg1NX0.4CDhIuNZE12x2axL7YvJAzS6zMSLDt7tJ4kxniCFfAI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
 			},
 			"response": []
 		},
@@ -115,13 +131,13 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "TOKEN",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXRldXMiLCJpYXQiOjE3Mjk3MjY1MTMsImV4cCI6MTcyOTcyNzk1M30.198BnbhfXB_kQVYrlCU-EYLBaCltcOlfUbQskXLopOg",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"items\": [\r\n        {\"itemName\": \"Pastel\", \"quantity\": 2, \"unityValue\": 6.5},\r\n        {\"itemName\": \"Coca-cola\", \"quantity\": 1, \"unityValue\": 4.5},\r\n        {\"itemName\": \"Gengibre\", \"quantity\": 1, \"unityValue\": 2.3}\r\n    ]\r\n}",
+					"raw": "{\r\n    \"items\": [\r\n        {\"itemName\": \"Pastel\", \"quantity\": 2, \"unityValue\": 6.5},\r\n        {\"itemName\": \"Coca-cola\", \"quantity\": 1, \"unityValue\": 10.5},\r\n        {\"itemName\": \"Gengibre\", \"quantity\": 1, \"unityValue\": 2.3}\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -145,7 +161,23 @@
 			"name": "get order from authenticated user",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXRldXMiLCJpYXQiOjE3Mjk3MjY1MTMsImV4cCI6MTcyOTcyNzk1M30.198BnbhfXB_kQVYrlCU-EYLBaCltcOlfUbQskXLopOg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/orders",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders"
+					]
+				}
 			},
 			"response": []
 		},
@@ -211,7 +243,24 @@
 			"name": "get payment",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXRldXMiLCJpYXQiOjE3Mjk3MjY1MTMsImV4cCI6MTcyOTcyNzk1M30.198BnbhfXB_kQVYrlCU-EYLBaCltcOlfUbQskXLopOg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/payments/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"payments",
+						"1"
+					]
+				}
 			},
 			"response": []
 		}
